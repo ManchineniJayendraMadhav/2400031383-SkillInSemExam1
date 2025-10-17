@@ -1,0 +1,109 @@
+.student-card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: #ffffff;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 25px auto;
+  max-width: 700px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.student-card.horizontal {
+  flex-direction: row;
+  text-align: left;
+}
+
+.student-card.vertical {
+  flex-direction: column;
+  text-align: center;
+}
+
+.student-details {
+  width: 100%;
+}
+
+.student-name {
+  color: #333;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.student-details p {
+  color: #555;
+  margin: 6px 0;
+  font-size: 0.95rem;
+}
+
+/* Price section */
+.price-section {
+  margin-top: 12px;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-right: 10px;
+}
+
+.offer {
+  font-size: 0.9rem;
+  color: #e63946;
+}
+
+/* Buttons */
+.actions {
+  margin-top: 15px;
+}
+
+.btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  margin-right: 10px;
+  transition: background 0.3s ease;
+}
+
+.primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.primary:hover {
+  background-color: #0056b3;
+}
+
+.secondary {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.secondary:hover {
+  background-color: #ddd;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .student-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 16px;
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
